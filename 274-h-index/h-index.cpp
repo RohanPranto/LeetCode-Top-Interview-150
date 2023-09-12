@@ -15,7 +15,6 @@ class Solution {
       if (accumulate >= i)
         return i;
     }
-
     throw;
   }
 };
