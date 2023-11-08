@@ -1,0 +1,25 @@
+//reverse array
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter " << n << " integers for the array: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    reverse(arr, arr + n); // STL function to reverse the array
+
+    cout << "Reversed Array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
